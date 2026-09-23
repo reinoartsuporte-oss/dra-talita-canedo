@@ -1,273 +1,227 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dra. Talita Canêdo | Harmonização Orofacial em Goiânia</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <!-- FontAwesome para Ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dra. Talita Canêdo | Especialista em Harmonização Orofacial em Goiânia</title>
+  <meta name="description" content="Agende sua consulta de Harmonização Orofacial com a Dra. Talita Canêdo em Goiânia. Atendimento exclusivo e resultados naturais.">
+  
+  <!-- Fontes Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HERO SECTION -->
-    <header class="hero-section">
-        <div class="container hero-container">
-            <!-- No mobile, a imagem vai primeiro por causa da ordem flex / css, e agora está menor -->
-            <div class="hero-image-wrapper">
-                <img src="https://i.imgur.com/z0e4yYT.png" alt="Dra. Talita Canêdo - Harmonização Orofacial" class="hero-img">
-            </div>
-            <div class="hero-content">
-                <h1 class="hero-title">Eu sou Dra. Talita Canêdo, Especialista em Harmonização Orofacial.</h1>
-                <p class="hero-subtitle">Realço a sua beleza natural com total segurança, técnica refinada e procedimentos personalizados para transformar a sua autoestima.</p>
-                
-                <div class="hero-cta-box">
-                    <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp">
-                        <i class="fa-brands fa-whatsapp"></i> Agendar primeira consulta gratuita no WhatsApp
-                    </a>
-                    <span class="micro-text"><i class="fa-solid fa-bolt"></i> Resposta rápida • <i class="fa-solid fa-shield-heart"></i> Sem compromisso</span>
-                </div>
-
-                <div class="hero-badges">
-                    <div class="badge-item">
-                        <span class="badge-number">+Anos</span>
-                        <span class="badge-label">De Experiência</span>
-                    </div>
-                    <div class="badge-item">
-                        <span class="badge-number">100%</span>
-                        <span class="badge-label">Atendimento Exclusivo</span>
-                    </div>
-                    <div class="badge-item">
-                        <span class="badge-number">The Prime</span>
-                        <span class="badge-label">Localização Privilegiada</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <!-- BLOCO QUEM SOU EU -->
-    <section class="about-section" id="sobre">
-        <div class="container about-container">
-            <div class="about-img-wrapper">
-                <img src="https://i.imgur.com/bpZG9uS.png" alt="Dra. Talita Canêdo bastidores" class="about-img">
-            </div>
-            <div class="about-content">
-                <span class="section-tag">Sobre Mim</span>
-                <h2>Cuidando da sua essência com ciência e arte</h2>
-                <p class="about-text">
-                    Olá! Sou cirurgiã-dentista apaixonada por transformar vidas através da Harmonização Orofacial. Acredito que o verdadeiro segredo de um procedimento estético de excelência não é mudar quem você é, mas sim resgatar a sua melhor versão com naturalidade, harmonia e preservação dos seus traços únicos.
-                </p>
-                <ul class="about-bullets">
-                    <li><i class="fa-solid fa-circle-check"></i> Avaliação detalhada e focada na sua anatomia</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Produtos de altíssima qualidade e procedência</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Ambiente sofisticado, seguro e acolhedor em Goiânia</li>
-                    <li><i class="fa-solid fa-circle-check"></i> Acompanhamento integral em todas as etapas</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO RESULTADOS REAIS -->
-    <section class="results-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Transformações</span>
-                <h2>Resultados Reais</h2>
-                <p>Confira alguns dos nossos casos clínicos de harmonização orofacial.</p>
-            </div>
-
-            <div class="gallery-grid">
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/1C0MQlb.png')">
-                    <img src="https://i.imgur.com/1C0MQlb.png" alt="Resultado Antes e Depois 1" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/M0t1vgO.png')">
-                    <img src="https://i.imgur.com/M0t1vgO.png" alt="Resultado Antes e Depois 2" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/0BGHQaP.jpg')">
-                    <img src="https://i.imgur.com/0BGHQaP.jpg" alt="Resultado Antes e Depois 3" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/lu3MMLg.jpg')">
-                    <img src="https://i.imgur.com/lu3MMLg.jpg" alt="Resultado Antes e Depois 4" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/iT9NBig.jpg')">
-                    <img src="https://i.imgur.com/iT9NBig.jpg" alt="Resultado Antes e Depois 5" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/qmvJXFy.jpg')">
-                    <img src="https://i.imgur.com/qmvJXFy.jpg" alt="Resultado Antes e Depois 6" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/Bz8NJ1V.jpg')">
-                    <img src="https://i.imgur.com/Bz8NJ1V.jpg" alt="Resultado Antes e Depois 7" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/ZPKOVnn.jpg')">
-                    <img src="https://i.imgur.com/ZPKOVnn.jpg" alt="Resultado Antes e Depois 8" loading="lazy">
-                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
-                </div>
-            </div>
-
-            <p class="disclaimer">*Resultados podem variar de pessoa para pessoa.</p>
-        </div>
-    </section>
-
-    <!-- BLOCO POR QUE CONFIAR EM MIM -->
-    <section class="trust-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Excelência</span>
-                <h2>Por que confiar em mim?</h2>
-            </div>
-
-            <div class="trust-grid">
-                <div class="trust-card">
-                    <div class="trust-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
-                    <h3>Avaliação Honesta</h3>
-                    <p>Indico apenas o que realmente trará benefícios estéticos e funcionais para o seu rosto.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon"><i class="fa-solid fa-user-doctor"></i></div>
-                    <h3>Atendimento Comigo</h3>
-                    <p>Todo o seu processo, do planejamento ao procedimento, é realizado diretamente pela Dra. Talita.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon"><i class="fa-solid fa-comments"></i></div>
-                    <h3>Clareza Absoluta</h3>
-                    <p>Explicamos cada etapa, durabilidade e cuidados pós-procedimento sem termos complexos.</p>
-                </div>
-                <div class="trust-card">
-                    <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
-                    <h3>Segurança Rigorosa</h3>
-                    <p>Ambiente clínico esterilizado, materiais certificados e foco total na sua saúde.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA INTERMEDIÁRIO -->
-    <section class="cta-banner">
-        <div class="container cta-banner-content">
-            <h2>Pronta para realçar a sua beleza natural?</h2>
-            <p>Dê o primeiro passo agora mesmo. A primeira consulta é totalmente gratuita e sem compromisso.</p>
-            <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp">
-                <i class="fa-brands fa-whatsapp"></i> Quero agendar minha avaliação gratuita
-            </a>
-        </div>
-    </section>
-
-    <!-- BLOCO COMO FUNCIONA A PRIMEIRA CONSULTA -->
-    <section class="steps-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Passo a Passo</span>
-                <h2>Como funciona a primeira consulta?</h2>
-                <p>Um processo simples, rápido, 100% gratuito e sem compromisso.</p>
-            </div>
-
-            <div class="steps-grid">
-                <div class="step-card">
-                    <span class="step-number">01</span>
-                    <h3>Toque no WhatsApp</h3>
-                    <p>Clique em qualquer botão do site para iniciar uma conversa rápida com nossa equipe.</p>
-                </div>
-                <div class="step-card">
-                    <span class="step-number">02</span>
-                    <h3>Agendamento Simples</h3>
-                    <p>Escolha o melhor dia e horário para o seu atendimento em nosso consultório em Goiânia.</p>
-                </div>
-                <div class="step-card">
-                    <span class="step-number">03</span>
-                    <h3>Avaliação Personalizada</h3>
-                    <p>Realizamos sua análise facial detalhada no consultório (gratuita e sem compromisso).</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- BLOCO MAIS PROVAS (BASTIDORES E FEEDBACKS) -->
-    <section class="behind-section">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Bastidores & Feedback</span>
-                <h2>Experiência e Confiança</h2>
-                <p>Conheça um pouco do nosso espaço e o carinho dos nossos pacientes.</p>
-            </div>
-
-            <div class="behind-grid">
-                <div class="behind-card">
-                    <img src="https://i.imgur.com/FXSC2Kc.png" alt="Atendimento personalizado Dra Talita" loading="lazy">
-                    <span class="behind-caption">Atendimento personalizado</span>
-                </div>
-                <div class="behind-card">
-                    <img src="https://i.imgur.com/nhRfy9Y.png" alt="Feedback de cliente 1" loading="lazy">
-                    <span class="behind-caption">Feedback de paciente</span>
-                </div>
-                <div class="behind-card">
-                    <img src="https://i.imgur.com/MByavzA.png" alt="Feedback de cliente 2" loading="lazy">
-                    <span class="behind-caption">Reconhecimento e carinho</span>
-                </div>
-                <div class="behind-card">
-                    <img src="https://i.imgur.com/xqsUdzo.png" alt="Feedback de cliente 3" loading="lazy">
-                    <span class="behind-caption">Resultados que transformam</span>
-                </div>
-                <div class="behind-card">
-                    <img src="https://i.imgur.com/Wv7nkpX.png" alt="Feedback de cliente 4" loading="lazy">
-                    <span class="behind-caption">Segurança e confiança</span>
-                </div>
-                <div class="behind-card">
-                    <img src="https://i.imgur.com/XhSFumr.png" alt="Feedback de cliente 5" loading="lazy">
-                    <span class="behind-caption">Satisfação garantida</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA FINAL -->
-    <section class="final-cta-section">
-        <div class="container final-cta-box">
-            <h2>Transforme sua autoestima com segurança e elegância</h2>
-            <p>Venha tomar um café conosco no Edifício The Prime Tamandaré. A sua primeira consulta é totalmente gratuita.</p>
-            <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp btn-large">
-                <i class="fa-brands fa-whatsapp"></i> Agendar primeira consulta gratuita no WhatsApp
-            </a>
-            <span class="micro-text light-text"><i class="fa-solid fa-bolt"></i> Resposta rápida • <i class="fa-solid fa-shield-heart"></i> Sem compromisso</span>
-        </div>
-    </section>
-
-    <!-- RODAPÉ SIMPLES -->
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-info">
-                <h3>Dra. Talita Canêdo</h3>
-                <p>Especialista em Harmonização Orofacial • Cirurgiã-Dentista</p>
-                <p class="address-text"><i class="fa-solid fa-location-dot"></i> Rua 5, quadra C4, Edifício The Prime Tamandaré - St. Oeste, Goiânia - GO</p>
-            </div>
-            <div class="footer-social">
-                <a href="https://www.instagram.com/dra.talitacanedo" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.threads.com/@dra.talitacanedo?xmt=AQG0OQ9pLxk3HMTfpBmmsmM6vcLZhSndBOzYcJEXnBlhxoo" target="_blank" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
-                <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-            <div class="footer-copy">
-                <p>&copy; Dra. Talita Canêdo. Todos os direitos reservados.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- LIGHTBOX MODAL -->
-    <div id="lightboxModal" class="lightbox" onclick="closeLightbox()">
-        <span class="lightbox-close">&times;</span>
-        <img id="lightboxImg" src="" alt="Imagem ampliada">
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="container hero-container">
+      <div class="hero-image-wrapper">
+        <img src="https://i.imgur.com/T0C4CQU.png" alt="Dra. Talita Canêdo - Especialista em Harmonização Orofacial" class="hero-img">
+      </div>
+      <div class="hero-content">
+        <span class="tag">Atendimento Exclusivo em Goiânia</span>
+        <h1>Eu sou a Dra. Talita Canêdo, Cirurgiã-Dentista em Goiânia</h1>
+        <p class="subheadline">Especialista em realçar sua beleza natural com segurança, precisão e procedimentos de Harmonização Orofacial sob medida para o seu rosto.</p>
+        
+        <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.892 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.572-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          Agendar consulta pelo WhatsApp
+        </a>
+        <span class="microtext">⚡ Resposta rápida • Atendimento exclusivo</span>
+      </div>
     </div>
+  </section>
 
-    <script src="script.js"></script>
+  <!-- BLOCO QUEM SOU EU -->
+  <section class="about">
+    <div class="container about-container">
+      <div class="about-image">
+        <img src="https://i.imgur.com/z0e4yYT.png" alt="Dra. Talita Canêdo Atendimento">
+      </div>
+      <div class="about-content">
+        <h2>Muito prazer, sou a Dra. Talita Canêdo</h2>
+        <p>Acredito que a verdadeira harmonização não transforma quem você é, mas realça a sua melhor versão. Como Cirurgiã-Dentista dedicada à Harmonização Orofacial, meu foco é entregar resultados elegantes, simétricos e imperceptivelmente naturais.</p>
+        
+        <ul class="differentiators-list">
+          <li><strong>Atendimento individualizado:</strong> Cada planejamento facial é único e desenhado exclusivamente para você.</li>
+          <li><strong>Segurança em 1º lugar:</strong> Utilizo apenas produtos de altíssima qualidade e aprovados pela ANVISA.</li>
+          <li><strong>Técnicas avançadas:</strong> Atualização constante para procedimentos confortáveis e pós-operatório tranquilo.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO RESULTADOS REAIS -->
+  <section class="results">
+    <div class="container">
+      <div class="section-title">
+        <h2>Resultados Reais</h2>
+        <p>Transformações e alinhamentos focados em harmonia e naturalidade.</p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <div class="gallery-item"><img src="https://i.imgur.com/829d4e38-be57-4a52-9610-0458bc5488b2.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/7ab10a7f-4fd9-4950-a3f4-69bba77c4d7e.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/d1b519be-f7fe-454e-b4a6-096bf6d6855f.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/9441e00f-6c6a-494a-8730-e6d7c8d6f904.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/4978c7e0-887f-4b39-a80b-742e7c46ec98.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/7813f31d-40ef-8f4e-ac19ac02aedf.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/838d0742-ffe9-4816-95fa-2322adf7b3e0.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/6f9bf78d-fd05-4d3e-8da3-c63b251029bb.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/d84ac667-a4bd-43ab-8c3e-8668c1c1facb.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/ad610873-6385-46b7-8522-91585c83df96.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/MByavzA.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://i.imgur.com/a855c1dc-ea11-4d49-b821-4d72f25d2040.png" alt="Resultado de Harmonização Facial" loading="lazy"></div>
+      </div>
+
+      <p class="disclaimer">*Aviso: Os resultados podem variar de pessoa para pessoa. Cada anatomia é única e exige avaliação prévia.</p>
+    </div>
+  </section>
+
+  <!-- BLOCO POR QUE CONFIAR EM MIM -->
+  <section class="trust">
+    <div class="container">
+      <div class="section-title">
+        <h2>Por que confiar o seu rosto ao meu cuidado?</h2>
+        <p>Transparência, técnica e respeito à sua individualidade em todas as etapas.</p>
+      </div>
+
+      <div class="cards-grid">
+        <div class="card">
+          <div class="card-icon">✨</div>
+          <h3>Avaliação Sincera</h3>
+          <p>Indico apenas o que realmente vai harmonizar o seu rosto. Digo 'não' a procedimentos desnecessários.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">👩‍⚕️</div>
+          <h3>Atendimento Direto Comigo</h3>
+          <p>Do primeiro contato ao acompanhamento final, todo o seu tratamento é conduzido por mim.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">🛡️</div>
+          <h3>Segurança & Anatomia</h3>
+          <p>Domínio técnico e anatômico detalhado da face para minimizar desconfortos e garantir segurança.</p>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">💎</div>
+          <h3>Insumos Premium</h3>
+          <p>Uso exclusivo das marcas líderes mundiais em preenchedores e toxina botulínica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA INTERMEDIÁRIO -->
+  <section class="cta-banner">
+    <div class="container cta-banner-container">
+      <h2>Pronta para dar o primeiro passo com segurança?</h2>
+      <p>Tire suas dúvidas e entenda qual o melhor plano de tratamento para o seu caso.</p>
+      <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+        Falar com a Dra. Talita no WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- BLOCO COMO FUNCIONA -->
+  <section class="steps">
+    <div class="container">
+      <div class="section-title">
+        <h2>Como funciona seu atendimento</h2>
+        <p>Um caminho simples e acolhedor para cuidar do seu rosto.</p>
+      </div>
+
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-number">1</span>
+          <h3>Contato no WhatsApp</h3>
+          <p>Você clica no botão, envia uma mensagem e nossa equipe agenda o melhor horário para você.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">2</span>
+          <h3>Avaliação Presencial</h3>
+          <p>Analisamos a estrutura do seu rosto, ouvimos suas vontades e alinhamos expectativas.</p>
+        </div>
+
+        <div class="step-card">
+          <span class="step-number">3</span>
+          <h3>Plano Personalizado</h3>
+          <p>Você recebe um planejamento detalhado e transparente pensado exclusivamente para o seu caso.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOCO MAIS PROVAS (Bastidores / Autoridade) -->
+  <section class="authority">
+    <div class="container">
+      <div class="section-title">
+        <h2>Bastidores e Atendimento</h2>
+        <p>Conheça um pouco mais sobre a rotina e a estrutura preparada para te receber.</p>
+      </div>
+
+      <div class="authority-grid">
+        <div class="authority-item">
+          <img src="https://i.imgur.com/bpZG9uS.png" alt="Atendimento Dra. Talita Canêdo" loading="lazy">
+          <span class="caption">Atendimento humanizado e focado na sua satisfação</span>
+        </div>
+        <div class="authority-item">
+          <img src="https://i.imgur.com/FXSC2Kc.png" alt="Dra. Talita Canêdo em procedimento" loading="lazy">
+          <span class="caption">Rigor técnico e precisão em cada detalhe</span>
+        </div>
+        <div class="authority-item">
+          <img src="https://i.imgur.com/CRRQevx.png" alt="Consultório Dra. Talita Canêdo" loading="lazy">
+          <span class="caption">Ambiente confortável e pronto para te acolher</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="final-cta">
+    <div class="container final-cta-container">
+      <h2>Sua autoestima merece o cuidado de uma especialista.</h2>
+      <p>Agende sua avaliação e venha planejar sua transformação.</p>
+      <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-large">
+        Quero Agendar Minha Consulta
+      </a>
+      <span class="microtext-light">Atendimento com hora marcada em Goiânia - GO</span>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <h3>Dra. Talita Canêdo</h3>
+        <p>Especialista em Harmonização Orofacial | Cirurgiã-Dentista</p>
+        <p class="address">📍 Rua 5, quadra C4, Edifício The Prime Tamandaré - St. Oeste, Goiânia - GO, 74115-060</p>
+      </div>
+
+      <div class="footer-social">
+        <a href="https://www.instagram.com/dra.talitacanedo" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://www.threads.com/@dra.talitacanedo?xmt=AQG0OQ9pLxk3HMTfpBmmsmM6vcLZhSndBOzYcJEXnBlhxoo" target="_blank" rel="noopener noreferrer">Threads</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; Dra. Talita Canêdo. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- LIGHTBOX PARA A GALERIA -->
+  <div class="lightbox" id="lightbox">
+    <span class="lightbox-close" id="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Imagem Ampliada">
+  </div>
+
+  <!-- SCRIPT -->
+  <script src="script.js"></script>
 </body>
 </html>
