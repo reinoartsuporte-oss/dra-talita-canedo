@@ -1,475 +1,271 @@
 <!DOCTYPE html>
-<html lang="pt-BR" class="scroll-smooth">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dra. Talita Canêdo | Especialista em Harmonização Orofacial em Goiânia</title>
-    <meta name="description" content="Especialista em Harmonização Orofacial e Cirurgiã-Dentista no Setor Oeste, Goiânia - GO. Agende sua primeira consulta gratuita.">
+    <title>Dra. Talita Canêdo | Harmonização Orofacial em Goiânia</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <!-- FontAwesome for icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome para Ícones -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Tailwind CSS CDN -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        gold: {
-                            50: '#fbf8f3',
-                            100: '#f5ede1',
-                            200: '#e8d5bc',
-                            300: '#d9bb93',
-                            400: '#ca9f6b',
-                            500: '#b88648',
-                            600: '#a36d39',
-                            700: '#845330',
-                            800: '#6b432a',
-                            900: '#583724',
-                            950: '#311d13',
-                        },
-                        sand: {
-                            50: '#faf9f6',
-                            100: '#f3f1eb',
-                            200: '#e5e1d5',
-                            300: '#d1cbc0',
-                            800: '#4a4640',
-                            900: '#2c2a27',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
-                        serif: ['"Playfair Display"', 'serif'],
-                    }
-                }
-            }
-        }
-    </script>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-sand-50 text-sand-900 font-sans antialiased selection:bg-gold-200 selection:text-gold-900">
+<body>
 
     <!-- HERO SECTION -->
-    <header class="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-12 pb-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gold-50/50 to-sand-50">
-        <div class="max-w-6xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-            
-            <!-- Hero Text Content -->
-            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
-                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-gold-100 text-gold-800 text-xs sm:text-sm font-medium tracking-wide">
-                    <i class="fa-solid fa-star text-gold-600 text-xs"></i> Setor Oeste • Goiânia - GO
-                </div>
+    <header class="hero-section">
+        <div class="container hero-container">
+            <!-- No mobile, a imagem vai primeiro por causa da ordem flex / css, e agora está menor -->
+            <div class="hero-image-wrapper">
+                <img src="https://i.imgur.com/z0e4yYT.png" alt="Dra. Talita Canêdo - Harmonização Orofacial" class="hero-img">
+            </div>
+            <div class="hero-content">
+                <h1 class="hero-title">Eu sou Dra. Talita Canêdo, Especialista em Harmonização Orofacial.</h1>
+                <p class="hero-subtitle">Realço a sua beleza natural com total segurança, técnica refinada e procedimentos personalizados para transformar a sua autoestima.</p>
                 
-                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold text-sand-900 leading-tight">
-                    Eu sou a <span class="text-gold-700 italic">Dra. Talita Canêdo</span>, Especialista em Harmonização Orofacial.
-                </h1>
-                
-                <p class="text-base sm:text-lg text-sand-800 leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                    Realço a sua beleza natural com total segurança, técnica refinada e procedimentos personalizados para transformar a sua autoestima.
-                </p>
-
-                <!-- CTA Principal -->
-                <div class="pt-2 flex flex-col items-center lg:items-start gap-2">
-                    <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" 
-                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-base sm:text-lg rounded-2xl shadow-xl shadow-emerald-600/20 hover:shadow-emerald-600/30 transition-all transform hover:-translate-y-0.5">
-                        <i class="fa-brands fa-whatsapp text-2xl"></i>
-                        <span>Agendar primeira consulta gratuita no WhatsApp</span>
+                <div class="hero-cta-box">
+                    <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i> Agendar primeira consulta gratuita no WhatsApp
                     </a>
-                    <span class="text-xs text-sand-800 flex items-center gap-2 mt-1">
-                        <i class="fa-solid fa-bolt text-gold-600"></i> Resposta rápida • <i class="fa-solid fa-shield-check text-gold-600 ml-1"></i> Sem compromisso
-                    </span>
+                    <span class="micro-text"><i class="fa-solid fa-bolt"></i> Resposta rápida • <i class="fa-solid fa-shield-heart"></i> Sem compromisso</span>
                 </div>
 
-                <!-- Mini Trust Badges -->
-                <div class="pt-6 grid grid-cols-3 gap-4 border-t border-sand-200/60 max-w-lg mx-auto lg:mx-0">
-                    <div>
-                        <p class="font-serif font-bold text-xl text-gold-700">+Anos</p>
-                        <p class="text-xs text-sand-800">De Experiência</p>
+                <div class="hero-badges">
+                    <div class="badge-item">
+                        <span class="badge-number">+Anos</span>
+                        <span class="badge-label">De Experiência</span>
                     </div>
-                    <div>
-                        <p class="font-serif font-bold text-xl text-gold-700">100%</p>
-                        <p class="text-xs text-sand-800">Atendimento Exclusivo</p>
+                    <div class="badge-item">
+                        <span class="badge-number">100%</span>
+                        <span class="badge-label">Atendimento Exclusivo</span>
                     </div>
-                    <div>
-                        <p class="font-serif font-bold text-xl text-gold-700">The Prime</p>
-                        <p class="text-xs text-sand-800">Localização Privilegiada</p>
+                    <div class="badge-item">
+                        <span class="badge-number">The Prime</span>
+                        <span class="badge-label">Localização Privilegiada</span>
                     </div>
                 </div>
             </div>
-
-            <!-- Hero Image -->
-            <div class="lg:col-span-5 relative flex justify-center">
-                <div class="absolute -inset-4 bg-gradient-to-tr from-gold-300/40 to-transparent rounded-3xl filter blur-xl opacity-70"></div>
-                <div class="relative w-full max-w-md aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border-4 border-white bg-sand-200">
-                    <img src="https://i.imgur.com/z0e4yYT.png" alt="Dra. Talita Canêdo - Harmonização Orofacial" class="w-full h-full object-cover object-top">
-                </div>
-            </div>
-
         </div>
     </header>
 
-    <!-- BLOCO: QUEM SOU EU -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 items-center">
-            
-            <div class="md:col-span-5 flex justify-center">
-                <div class="w-72 sm:w-80 aspect-square rounded-2xl overflow-hidden shadow-xl border-2 border-gold-200 relative">
-                    <img src="https://i.imgur.com/bpZG9uS.png" alt="Dra. Talita Canêdo em seu consultório" class="w-full h-full object-cover">
-                </div>
+    <!-- BLOCO QUEM SOU EU -->
+    <section class="about-section" id="sobre">
+        <div class="container about-container">
+            <div class="about-img-wrapper">
+                <img src="https://i.imgur.com/bpZG9uS.png" alt="Dra. Talita Canêdo bastidores" class="about-img">
             </div>
-
-            <div class="md:col-span-7 space-y-6">
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-50 px-3 py-1 rounded-md">Quem sou eu</span>
-                <h2 class="text-3xl font-serif font-bold text-sand-900">
-                    Olá, sou a Dra. Talita Canêdo. Minha missão é cuidar de você com excelência.
-                </h2>
-                <p class="text-sand-800 leading-relaxed">
-                    Cirurgiã-Dentista especialista em Harmonização Orofacial, acredito que cada rosto tem sua própria identidade e harmonia natural. Meu trabalho não é transformar quem você é, mas resgatar a sua melhor versão através de procedimentos seguros, modernos e com resultados elegantes.
+            <div class="about-content">
+                <span class="section-tag">Sobre Mim</span>
+                <h2>Cuidando da sua essência com ciência e arte</h2>
+                <p class="about-text">
+                    Olá! Sou cirurgiã-dentista apaixonada por transformar vidas através da Harmonização Orofacial. Acredito que o verdadeiro segredo de um procedimento estético de excelência não é mudar quem você é, mas sim resgatar a sua melhor versão com naturalidade, harmonia e preservação dos seus traços únicos.
                 </p>
-
-                <div class="space-y-3 pt-2">
-                    <div class="flex items-start gap-3">
-                        <div class="mt-1 w-5 h-5 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 text-xs shrink-0">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <p class="text-sand-800 text-sm sm:text-base"><strong>Avaliação individualizada:</strong> Analiso cada detalhe da sua anatomia facial para propor apenas o que faz sentido para você.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <div class="mt-1 w-5 h-5 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 text-xs shrink-0">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <p class="text-sand-800 text-sm sm:text-base"><strong>Materiais de alta qualidade:</strong> Trabalho exclusivamente com marcas certificadas e aprovadas pelos órgãos reguladores.</p>
-                    </div>
-                    <div class="flex items-start gap-3">
-                        <div class="mt-1 w-5 h-5 rounded-full bg-gold-100 flex items-center justify-center text-gold-700 text-xs shrink-0">
-                            <i class="fa-solid fa-check"></i>
-                        </div>
-                        <p class="text-sand-800 text-sm sm:text-base"><strong>Atendimento humanizado e acolhedor:</strong> Do primeiro contato ao pós-procedimento, você terá meu acompanhamento próximo.</p>
-                    </div>
-                </div>
+                <ul class="about-bullets">
+                    <li><i class="fa-solid fa-circle-check"></i> Avaliação detalhada e focada na sua anatomia</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Produtos de altíssima qualidade e procedência</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Ambiente sofisticado, seguro e acolhedor em Goiânia</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Acompanhamento integral em todas as etapas</li>
+                </ul>
             </div>
-
         </div>
     </section>
 
-    <!-- BLOCO: RESULTADOS REAIS (GALERIA) -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-sand-50 border-y border-sand-200/50">
-        <div class="max-w-6xl mx-auto space-y-12">
-            
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-100/60 px-3 py-1 rounded-md">Galeria de Transformações</span>
-                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-sand-900">Resultados Reais</h2>
-                <p class="text-sand-800 text-sm sm:text-base">
-                    Confira abaixo alguns dos casos atendidos em nosso consultório. Clique na imagem para ampliar.
-                </p>
+    <!-- BLOCO RESULTADOS REAIS -->
+    <section class="results-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Transformações</span>
+                <h2>Resultados Reais</h2>
+                <p>Confira alguns dos nossos casos clínicos de harmonização orofacial.</p>
             </div>
 
-            <!-- Grid de Galeria -->
-            <div id="gallery-grid" class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-                <!-- Imagem 1 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/1C0MQlb.png', 'Resultado HOF - Caso 1')">
-                    <img src="https://i.imgur.com/1C0MQlb.png" alt="Resultado HOF 1" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+            <div class="gallery-grid">
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/1C0MQlb.png')">
+                    <img src="https://i.imgur.com/1C0MQlb.png" alt="Resultado Antes e Depois 1" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
-                <!-- Imagem 2 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/M0t1vgO.png', 'Resultado HOF - Caso 2')">
-                    <img src="https://i.imgur.com/M0t1vgO.png" alt="Resultado HOF 2" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/M0t1vgO.png')">
+                    <img src="https://i.imgur.com/M0t1vgO.png" alt="Resultado Antes e Depois 2" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
-                <!-- Imagem 3 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/0BGHQaP.jpg', 'Resultado HOF - Caso 3')">
-                    <img src="https://i.imgur.com/0BGHQaP.jpg" alt="Resultado HOF 3" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/0BGHQaP.jpg')">
+                    <img src="https://i.imgur.com/0BGHQaP.jpg" alt="Resultado Antes e Depois 3" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
-                <!-- Imagem 4 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/lu3MMLg.jpg', 'Resultado HOF - Caso 4')">
-                    <img src="https://i.imgur.com/lu3MMLg.jpg" alt="Resultado HOF 4" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/lu3MMLg.jpg')">
+                    <img src="https://i.imgur.com/lu3MMLg.jpg" alt="Resultado Antes e Depois 4" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
-                <!-- Imagem 5 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/iT9NBig.jpg', 'Resultado HOF - Caso 5')">
-                    <img src="https://i.imgur.com/iT9NBig.jpg" alt="Resultado HOF 5" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/iT9NBig.jpg')">
+                    <img src="https://i.imgur.com/iT9NBig.jpg" alt="Resultado Antes e Depois 5" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
-                <!-- Imagem 6 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/qmvJXFy.jpg', 'Resultado HOF - Caso 6')">
-                    <img src="https://i.imgur.com/qmvJXFy.jpg" alt="Resultado HOF 6" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/qmvJXFy.jpg')">
+                    <img src="https://i.imgur.com/qmvJXFy.jpg" alt="Resultado Antes e Depois 6" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
-                <!-- Imagem 7 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/Bz8NJ1V.jpg', 'Resultado HOF - Caso 7')">
-                    <img src="https://i.imgur.com/Bz8NJ1V.jpg" alt="Resultado HOF 7" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/Bz8NJ1V.jpg')">
+                    <img src="https://i.imgur.com/Bz8NJ1V.jpg" alt="Resultado Antes e Depois 7" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
-                <!-- Imagem 8 -->
-                <div class="gallery-item group relative aspect-square rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/ZPKOVnn.jpg', 'Resultado HOF - Caso 8')">
-                    <img src="https://i.imgur.com/ZPKOVnn.jpg" alt="Resultado HOF 8" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
-                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center text-white">
-                        <i class="fa-solid fa-expand text-xl"></i>
-                    </div>
+                <div class="gallery-item" onclick="openLightbox('https://i.imgur.com/ZPKOVnn.jpg')">
+                    <img src="https://i.imgur.com/ZPKOVnn.jpg" alt="Resultado Antes e Depois 8" loading="lazy">
+                    <div class="gallery-overlay"><i class="fa-solid fa-expand"></i></div>
                 </div>
             </div>
 
-            <!-- Aviso discreto -->
-            <p class="text-center text-xs text-sand-800 italic">
-                * Resultados podem variar de pessoa para pessoa. Cada planejamento é único e exclusivo.
-            </p>
-
+            <p class="disclaimer">*Resultados podem variar de pessoa para pessoa.</p>
         </div>
     </section>
 
-    <!-- BLOCO: POR QUE CONFIAR EM MIM? -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div class="max-w-6xl mx-auto space-y-12">
-            
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-50 px-3 py-1 rounded-md">Diferenciais</span>
-                <h2 class="text-3xl font-serif font-bold text-sand-900">Por que confiar em meu trabalho?</h2>
-                <p class="text-sand-800 text-sm sm:text-base">
-                    Compromisso inegociável com a sua segurança, saúde e satisfação.
-                </p>
+    <!-- BLOCO POR QUE CONFIAR EM MIM -->
+    <section class="trust-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Excelência</span>
+                <h2>Por que confiar em mim?</h2>
             </div>
 
-            <!-- Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                
-                <div class="p-8 rounded-2xl bg-sand-50 border border-sand-200/80 space-y-4 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 rounded-xl bg-gold-100 flex items-center justify-center text-gold-700 text-xl font-bold">
-                        <i class="fa-solid fa-heart-pulse"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-sand-900">Avaliação Honesta</h3>
-                    <p class="text-sand-800 text-sm leading-relaxed">
-                        Indico apenas o que realmente trará harmonia e benefício estético e funcional para o seu rosto. Sem excessos.
-                    </p>
+            <div class="trust-grid">
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+                    <h3>Avaliação Honesta</h3>
+                    <p>Indico apenas o que realmente trará benefícios estéticos e funcionais para o seu rosto.</p>
                 </div>
-
-                <div class="p-8 rounded-2xl bg-sand-50 border border-sand-200/80 space-y-4 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 rounded-xl bg-gold-100 flex items-center justify-center text-gold-700 text-xl font-bold">
-                        <i class="fa-solid fa-user-doctor"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-sand-900">Atendimento Comigo</h3>
-                    <p class="text-sand-800 text-sm leading-relaxed">
-                        Você será atendida por mim em todas as etapas — da avaliação inicial ao retorno e acompanhamento pós-procedimento.
-                    </p>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fa-solid fa-user-doctor"></i></div>
+                    <h3>Atendimento Comigo</h3>
+                    <p>Todo o seu processo, do planejamento ao procedimento, é realizado diretamente pela Dra. Talita.</p>
                 </div>
-
-                <div class="p-8 rounded-2xl bg-sand-50 border border-sand-200/80 space-y-4 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 rounded-xl bg-gold-100 flex items-center justify-center text-gold-700 text-xl font-bold">
-                        <i class="fa-solid fa-comments"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-sand-900">Clareza e Segurança</h3>
-                    <p class="text-sand-800 text-sm leading-relaxed">
-                        Explico cada detalhe do procedimento, quais produtos utilizamos e respondemos todas as suas dúvidas com total transparência.
-                    </p>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h3>Clareza Absoluta</h3>
+                    <p>Explicamos cada etapa, durabilidade e cuidados pós-procedimento sem termos complexos.</p>
                 </div>
-
-                <div class="p-8 rounded-2xl bg-sand-50 border border-sand-200/80 space-y-4 hover:shadow-lg transition-shadow">
-                    <div class="w-12 h-12 rounded-xl bg-gold-100 flex items-center justify-center text-gold-700 text-xl font-bold">
-                        <i class="fa-solid fa-location-dot"></i>
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-sand-900">Localização Privilegiada</h3>
-                    <p class="text-sand-800 text-sm leading-relaxed">
-                        Atendimento em consultório moderno e confortável no Edifício The Prime Tamandaré, Setor Oeste em Goiânia.
-                    </p>
+                <div class="trust-card">
+                    <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Segurança Rigorosa</h3>
+                    <p>Ambiente clínico esterilizado, materiais certificados e foco total na sua saúde.</p>
                 </div>
-
             </div>
-
         </div>
     </section>
 
     <!-- CTA INTERMEDIÁRIO -->
-    <section class="py-16 px-4 sm:px-6 lg:px-8 bg-gold-900 text-white text-center">
-        <div class="max-w-3xl mx-auto space-y-6">
-            <h2 class="text-2xl sm:text-3xl font-serif font-bold">Pronta para realçar o que você tem de mais belo?</h2>
-            <p class="text-gold-200 text-sm sm:text-base max-w-xl mx-auto">
-                Tire suas dúvidas diretamente com nossa equipe e agende sua primeira consulta sem compromisso.
-            </p>
-            <div>
-                <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" 
-                   class="inline-flex items-center gap-3 px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white font-semibold text-base rounded-2xl shadow-xl transition-all transform hover:-translate-y-0.5">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    <span>Agendar primeira consulta gratuita no WhatsApp</span>
-                </a>
+    <section class="cta-banner">
+        <div class="container cta-banner-content">
+            <h2>Pronta para realçar a sua beleza natural?</h2>
+            <p>Dê o primeiro passo agora mesmo. A primeira consulta é totalmente gratuita e sem compromisso.</p>
+            <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp">
+                <i class="fa-brands fa-whatsapp"></i> Quero agendar minha avaliação gratuita
+            </a>
+        </div>
+    </section>
+
+    <!-- BLOCO COMO FUNCIONA A PRIMEIRA CONSULTA -->
+    <section class="steps-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Passo a Passo</span>
+                <h2>Como funciona a primeira consulta?</h2>
+                <p>Um processo simples, rápido, 100% gratuito e sem compromisso.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>Toque no WhatsApp</h3>
+                    <p>Clique em qualquer botão do site para iniciar uma conversa rápida com nossa equipe.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>Agendamento Simples</h3>
+                    <p>Escolha o melhor dia e horário para o seu atendimento em nosso consultório em Goiânia.</p>
+                </div>
+                <div class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>Avaliação Personalizada</h3>
+                    <p>Realizamos sua análise facial detalhada no consultório (gratuita e sem compromisso).</p>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- BLOCO: COMO FUNCIONA A PRIMEIRA CONSULTA -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-white">
-        <div class="max-w-5xl mx-auto space-y-12">
-            
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-50 px-3 py-1 rounded-md">Passo a Passo</span>
-                <h2 class="text-3xl font-serif font-bold text-sand-900">Como funciona a primeira consulta</h2>
-                <p class="text-sand-800 text-sm sm:text-base">
-                    Simples, rápido e totalmente gratuito para você dar o primeiro passo com tranquilidade.
-                </p>
+    <!-- BLOCO MAIS PROVAS (BASTIDORES E FEEDBACKS) -->
+    <section class="behind-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Bastidores & Feedback</span>
+                <h2>Experiência e Confiança</h2>
+                <p>Conheça um pouco do nosso espaço e o carinho dos nossos pacientes.</p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <div class="text-center p-6 space-y-4">
-                    <div class="w-16 h-16 rounded-full bg-gold-100 text-gold-700 font-serif font-bold text-2xl flex items-center justify-center mx-auto shadow-inner">
-                        1
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-sand-900">Clique no WhatsApp</h3>
-                    <p class="text-sand-800 text-sm leading-relaxed">
-                        Inicie uma conversa rápida pelo botão em nosso site. Nossa equipe está pronta para lhe atender.
-                    </p>
+            <div class="behind-grid">
+                <div class="behind-card">
+                    <img src="https://i.imgur.com/FXSC2Kc.png" alt="Atendimento personalizado Dra Talita" loading="lazy">
+                    <span class="behind-caption">Atendimento personalizado</span>
                 </div>
-
-                <div class="text-center p-6 space-y-4">
-                    <div class="w-16 h-16 rounded-full bg-gold-100 text-gold-700 font-serif font-bold text-2xl flex items-center justify-center mx-auto shadow-inner">
-                        2
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-sand-900">Agendamento Flexível</h3>
-                    <p class="text-sand-800 text-sm leading-relaxed">
-                        Escolha o melhor dia e horário para vir ao consultório no Setor Oeste, Goiânia.
-                    </p>
+                <div class="behind-card">
+                    <img src="https://i.imgur.com/nhRfy9Y.png" alt="Feedback de cliente 1" loading="lazy">
+                    <span class="behind-caption">Feedback de paciente</span>
                 </div>
-
-                <div class="text-center p-6 space-y-4">
-                    <div class="w-16 h-16 rounded-full bg-gold-100 text-gold-700 font-serif font-bold text-2xl flex items-center justify-center mx-auto shadow-inner">
-                        3
-                    </div>
-                    <h3 class="font-serif font-bold text-xl text-sand-900">Avaliação Personalizada</h3>
-                    <p class="text-sand-800 text-sm leading-relaxed">
-                        Conversaremos sobre seus desejos, faremos a análise facial e tudo isso de forma <strong>gratuita e sem compromisso</strong>.
-                    </p>
+                <div class="behind-card">
+                    <img src="https://i.imgur.com/MByavzA.png" alt="Feedback de cliente 2" loading="lazy">
+                    <span class="behind-caption">Reconhecimento e carinho</span>
                 </div>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- BLOCO: MAIS PROVAS (BASTIDORES E FEEDBACKS) -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-sand-50 border-t border-sand-200/50">
-        <div class="max-w-6xl mx-auto space-y-12">
-            
-            <div class="text-center max-w-2xl mx-auto space-y-3">
-                <span class="text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-100/60 px-3 py-1 rounded-md">Bastidores & Confiança</span>
-                <h2 class="text-3xl font-serif font-bold text-sand-900">O que dizem nossas pacientes</h2>
-                <p class="text-sand-800 text-sm sm:text-base">
-                    Carinho e reconhecimento pelo trabalho dedicado que realizamos todos os dias.
-                </p>
-            </div>
-
-            <!-- Feedbacks de Clientes (Grid) -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 p-2">
-                    <img src="https://i.imgur.com/nhRfy9Y.png" alt="Feedback de cliente 1" class="w-full h-auto rounded-xl object-contain">
+                <div class="behind-card">
+                    <img src="https://i.imgur.com/xqsUdzo.png" alt="Feedback de cliente 3" loading="lazy">
+                    <span class="behind-caption">Resultados que transformam</span>
                 </div>
-                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 p-2">
-                    <img src="https://i.imgur.com/MByavzA.png" alt="Feedback de cliente 2" class="w-full h-auto rounded-xl object-contain">
+                <div class="behind-card">
+                    <img src="https://i.imgur.com/Wv7nkpX.png" alt="Feedback de cliente 4" loading="lazy">
+                    <span class="behind-caption">Segurança e confiança</span>
                 </div>
-                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 p-2">
-                    <img src="https://i.imgur.com/xqsUdzo.png" alt="Feedback de cliente 3" class="w-full h-auto rounded-xl object-contain">
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 p-2">
-                    <img src="https://i.imgur.com/Wv7nkpX.png" alt="Feedback de cliente 4" class="w-full h-auto rounded-xl object-contain">
-                </div>
-                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 p-2">
-                    <img src="https://i.imgur.com/XhSFumr.png" alt="Feedback de cliente 5" class="w-full h-auto rounded-xl object-contain">
+                <div class="behind-card">
+                    <img src="https://i.imgur.com/XhSFumr.png" alt="Feedback de cliente 5" loading="lazy">
+                    <span class="behind-caption">Satisfação garantida</span>
                 </div>
             </div>
-
-            <!-- Bastidores / Outras fotos do expert -->
-            <div class="pt-8">
-                <h3 class="text-xl font-serif font-bold text-sand-900 text-center mb-6">Nos Bastidores do Consultório</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-                    <div class="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/bpZG9uS.png', 'Atendimento personalizado')">
-                        <img src="https://i.imgur.com/bpZG9uS.png" alt="Atendimento personalizado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
-                            <p class="text-sm font-medium">Atendimento personalizado</p>
-                        </div>
-                    </div>
-                    <div class="group relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md bg-white border border-sand-200 cursor-pointer" onclick="openLightbox('https://i.imgur.com/FXSC2Kc.png', 'Precisão e cuidado em cada detalhe')">
-                        <img src="https://i.imgur.com/FXSC2Kc.png" alt="Precisão e cuidado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                        <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/70 to-transparent p-4 text-white">
-                            <p class="text-sm font-medium">Precisão e cuidado em cada detalhe</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
     </section>
 
     <!-- CTA FINAL -->
-    <section class="py-24 px-4 sm:px-6 lg:px-8 bg-white text-center">
-        <div class="max-w-3xl mx-auto space-y-6">
-            <span class="text-xs font-bold uppercase tracking-widest text-gold-600 bg-gold-50 px-3 py-1 rounded-md">Vagas Limitadas</span>
-            <h2 class="text-3xl sm:text-4xl font-serif font-bold text-sand-900">Dê o primeiro passo para transformar sua autoestima</h2>
-            <p class="text-sand-800 text-base sm:text-lg max-w-xl mx-auto">
-                Agende agora mesmo sua primeira consulta gratuita e descubra o tratamento ideal para você no Setor Oeste, Goiânia.
-            </p>
-            <div class="pt-4">
-                <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" 
-                   class="inline-flex items-center gap-3 px-8.5 py-4.5 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-base sm:text-lg rounded-2xl shadow-xl shadow-emerald-600/20 transition-all transform hover:-translate-y-0.5">
-                    <i class="fa-brands fa-whatsapp text-2xl"></i>
-                    <span>Agendar primeira consulta gratuita no WhatsApp</span>
-                </a>
-            </div>
-            <p class="text-xs text-sand-800">
-                Resposta rápida • Sem compromisso
-            </p>
+    <section class="final-cta-section">
+        <div class="container final-cta-box">
+            <h2>Transforme sua autoestima com segurança e elegância</h2>
+            <p>Venha tomar um café conosco no Edifício The Prime Tamandaré. A sua primeira consulta é totalmente gratuita.</p>
+            <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" class="btn-whatsapp btn-large">
+                <i class="fa-brands fa-whatsapp"></i> Agendar primeira consulta gratuita no WhatsApp
+            </a>
+            <span class="micro-text light-text"><i class="fa-solid fa-bolt"></i> Resposta rápida • <i class="fa-solid fa-shield-heart"></i> Sem compromisso</span>
         </div>
     </section>
 
     <!-- RODAPÉ SIMPLES -->
-    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-sand-900 text-sand-200">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
-            <div class="space-y-1">
-                <p class="font-serif font-bold text-lg text-white">Dra. Talita Canêdo</p>
-                <p class="text-xs text-sand-300">Especialista em Harmonização Orofacial • Cirurgiã-Dentista</p>
-                <p class="text-xs text-sand-300">Rua 5, quadra C4, Edifício The Prime Tamandaré - St. Oeste, Goiânia - GO, 74115-060</p>
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-info">
+                <h3>Dra. Talita Canêdo</h3>
+                <p>Especialista em Harmonização Orofacial • Cirurgiã-Dentista</p>
+                <p class="address-text"><i class="fa-solid fa-location-dot"></i> Rua 5, quadra C4, Edifício The Prime Tamandaré - St. Oeste, Goiânia - GO</p>
             </div>
-
-            <div class="flex items-center gap-4 text-xl">
-                <a href="https://www.instagram.com/dra.talitacanedo" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-sand-800 hover:bg-gold-600 flex items-center justify-center transition-colors text-white" aria-label="Instagram">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.threads.com/@dra.talitacanedo?xmt=AQG0OQ9pLxk3HMTfpBmmsmM6vcLZhSndBOzYcJEXnBlhxoo" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-sand-800 hover:bg-gold-600 flex items-center justify-center transition-colors text-white" aria-label="Threads">
-                    <i class="fa-brands fa-threads"></i>
-                </a>
-                <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-sand-800 hover:bg-emerald-600 flex items-center justify-center transition-colors text-white" aria-label="WhatsApp">
-                    <i class="fa-brands fa-whatsapp"></i>
-                </a>
+            <div class="footer-social">
+                <a href="https://www.instagram.com/dra.talitacanedo" target="_blank" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.threads.com/@dra.talitacanedo?xmt=AQG0OQ9pLxk3HMTfpBmmsmM6vcLZhSndBOzYcJEXnBlhxoo" target="_blank" aria-label="Threads"><i class="fa-brands fa-threads"></i></a>
+                <a href="https://api.whatsapp.com/message/UNNMR7PTO5GOJ1?autoload=1&app_absent=0" target="_blank" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
             </div>
-        </div>
-
-        <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-sand-800 text-center text-xs text-sand-300">
-            <p>&copy; Dra. Talita Canêdo. Todos os direitos reservados.</p>
+            <div class="footer-copy">
+                <p>&copy; Dra. Talita Canêdo. Todos os direitos reservados.</p>
+            </div>
         </div>
     </footer>
 
     <!-- LIGHTBOX MODAL -->
-    <div id="lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4">
-        <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-gold-300 transition-colors z-50" aria-label="Fechar">
-            <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center">
-            <img id="lightbox-img" src="" alt="Imagem ampliada" class="max-h-[80vh] max-w-full object-contain rounded-lg shadow-2xl">
-            <p id="lightbox-caption" class="text-white text-sm mt-4 text-center font-medium"></p>
-        </div>
+    <div id="lightboxModal" class="lightbox" onclick="closeLightbox()">
+        <span class="lightbox-close">&times;</span>
+        <img id="lightboxImg" src="" alt="Imagem ampliada">
     </div>
 
     <script src="script.js"></script>
